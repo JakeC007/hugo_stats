@@ -8,11 +8,11 @@ library(readr)
 
 ##Import Data
 hugo_novel <- read_excel("data\\hugo_data.xlsx", sheet = "Best Novel", col_types = c("text",
-                                                                                               "text", "text", "numeric", "numeric", "numeric"))
+                                                                                   "text", "text", "numeric", "numeric", "numeric"))
 hugo_novella <- read_excel("data\\hugo_data.xlsx", sheet = "Best Novella", col_types = c("text", 
-                                                                                                   "text", "text", "numeric", "numeric", "numeric"))
+                                                                                       "text", "text", "numeric", "numeric", "numeric"))
 hugo_novelette <- read_excel("data\\hugo_data.xlsx", sheet = "Best Novelette", col_types = c("text", 
-                                                                                                       "text", "text", "numeric", "numeric", "numeric"))
+                                                                                       "text", "text", "numeric", "numeric", "numeric"))
 
 calc_hyp <- function(mydata){
   pronouns_rand_samp <- sample(mydata, 30)
