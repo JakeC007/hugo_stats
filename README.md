@@ -4,13 +4,13 @@ For a class stats project I examined Hugo Award nominations over the past 11 yea
 
 ## Disclaimers
 - The data entry was done by hand, as such it is possible that there is an error in the data set
-- I pruned nominations with multiple authors from my data set because it would violaite my assumption of one set of pronouns per nomination
+- I pruned nominations with multiple authors from my data set because it would violate my assumption of one set of pronouns per nomination
 - I want to make it very clear that **I am glad that the Hugo Awards have recently been more conscious about gender equity.** 
 
 ## About This Project 
 - My data source was [the hugo awards website](http://www.thehugoawards.org/hugo-history/)
     - To ascertain an author's pronouns, I looked through an author's twitter, Wikipedia page, or website. 
-    - **Nominations with multiple authors were excluded because it would violaite my assumption of one set of pronouns per nomination.**
+    - **Nominations with multiple authors were excluded because it would violate my assumption of one set of pronouns per nomination.**
     - I only looked at the following categories because finding an author's pronouns is labor intensive so I had to limit the scope of the project 
         - Best Novel
         - Best Novella
