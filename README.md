@@ -1,4 +1,4 @@
-# An Exploratory Data Analysis Of 2011-2020 Hugo Nominations Data  
+# An Exploratory Data Analysis Of The 2011-2020 Hugo Nominations Data  
 
 For a class stats project I examined Hugo Award nominations over the past 11 years.
 
