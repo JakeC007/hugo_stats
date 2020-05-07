@@ -15,12 +15,12 @@ For a class stats project I examined Hugo Award nominations over the past 11 yea
 
 ## Results 
 
-[]!(https://github.com/JakeC007/hugo_stats/blob/master/imgs/Nominations%20by%20author.png)
+![Stacked bar chart that shows how many times an author has been nominated.](https://github.com/JakeC007/hugo_stats/blob/master/imgs/Nominations%20by%20author.png)
 
-[]!(https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novel%20BarChart.png)
+![Stacked bar chart that shows the pronoun breakdown of each year's Best Novel nominations](https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novel%20BarChart.png)
 
-[]!(https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novella%20BarChart.png)
+![Stacked bar chart that shows the pronoun breakdown of each year's Best Novella nominations](https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novella%20BarChart.png)
 
-[]!(https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novelette%20BarChart.png)
+![Stacked bar chart that shows the pronoun breakdown of each year's Best Novelette nominations](https://github.com/JakeC007/hugo_stats/blob/master/imgs/Best%20Novelette%20BarChart.png)
 
 
