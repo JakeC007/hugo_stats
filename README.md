@@ -49,19 +49,34 @@ For a class stats project I examined Hugo Award nominations over the past 11 yea
 
 ## Project Directory 
 hugo_stats
+
 |   dataViz.R <-- takes in hugo_data.xlsx and auth_stats.csv then outputs data viz
+
 |   generateAuthorCount.py <-- takes in hugo_data.xlsx and outputs auth_stats.csv
+
 |   LICENSE
+
 |   README.md
+
 |   
+
 +---data
+
 |       auth_stats.csv <-- processed data on number of nominations per author
+
 |       hugo_data.xlsx <-- orginal data set (pruned of multiple author nominations)
+
 |       
+
 \---imgs
+
         Best Novel BarChart.png
+        
         Best Novelette BarChart.png
+        
         Best Novella BarChart.png
+        
         Nominations by author.png
+        
 
 
