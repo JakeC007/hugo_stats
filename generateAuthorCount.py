@@ -13,9 +13,9 @@ for j in range(3):
   for i in range(1,sheet.nrows):
     nameT, gender, title, year, junk = sheet.row_values(i)
     name=str(nameT.strip('\xa0'))
-    if(gender == "F"):
+    if(gender == "she/her"):
       fDict[name]= fDict.setdefault(name, 0) + 1
-    elif(gender == "M"):
+    elif(gender == "he/him"):
       mDict[name]= mDict.setdefault(name, 0) + 1
     else:
       nbDict[name]= nbDict.setdefault(name, 0) + 1
