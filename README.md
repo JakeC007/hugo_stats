@@ -43,7 +43,7 @@ For a class stats project I examined Hugo Award nominations over the past 11 yea
     - There is 1 unique author that use they/them pronouns
 - The three authors with the most nominations are
     1. Seanan McGuire (7)
-    2. Mira Grant (6)
+    2. ~~Mira Grant (6)~~ 8/29/20 UPDATE: [Turns out Mira Grant is a pen name for Seanan McGuire](https://en.wikipedia.org/wiki/Seanan_McGuire). Shout out to islemaster for catching this!
     3. Aliette de Bodard (5)
 
 
