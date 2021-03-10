@@ -18,13 +18,12 @@ WHITELST = ["Best Novel","Best Novella", "Best Novelette", "Best Short Story"]
 def main():
   # foo = grabAwardYear(2020)
   # exportToCSV(foo, "test.csv", flag = True)
-
-  foo = grabAwardYear(2002)
+  foo = grabAwardYear(1999)
   exportToCSV(foo, "test.csv", flag = True)
 
-  # for i in range(2000,2021):
-  #   foo = grabAwardYear(i)
-  #   exportToCSV(foo, "test.csv", flag = True)
+  for i in range(2000,2021):
+    foo = grabAwardYear(i)
+    exportToCSV(foo, "test.csv")
 
   
   
@@ -168,6 +167,18 @@ def cleanEntry(text):
         time.sleep(10)
         #TODO FIX REGEX THIS
         pass
+  
+  #temp fix since regex isn't perfect on grabbing the first '(' or '['
+  try:
+    author, junk = author.split("[")
+    print(author)
+  except:
+    try:
+        author, junk = author.split("(")
+        print(author)
+    except:
+      print("passed")
+      pass
   
   UNIQUE_AUTH.add(author.strip('"“”″')) #global var 
   
