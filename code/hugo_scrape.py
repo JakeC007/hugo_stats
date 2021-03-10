@@ -16,11 +16,19 @@ UNIQUE_AUTH = set()
 WHITELST = ["Best Novel","Best Novella", "Best Novelette", "Best Short Story"]
 
 def main():
-    
-  print("The 2020 Year")
-  foo = grabAwardYear(2020)
+  # foo = grabAwardYear(2020)
+  # exportToCSV(foo, "test.csv", flag = True)
+
+  foo = grabAwardYear(2002)
   exportToCSV(foo, "test.csv", flag = True)
-  unqiueAuthToCSV("auth.csv")
+
+  # for i in range(2000,2021):
+  #   foo = grabAwardYear(i)
+  #   exportToCSV(foo, "test.csv", flag = True)
+
+  
+  
+  # unqiueAuthToCSV("auth.csv")
   #TODO
   # fix regex issue 
   # create rel path stuct for cache and csv file 
@@ -70,9 +78,15 @@ def grabAwardYear(year):
   results = soup.find_all("li", {"class":"winner"})
   for winner in results:
       category = winner.find_previous('strong')
-      print(f"** {category.text} **")
+      #process category 
       cat = category.text
-     
+      if cat not in WHITELST:
+        print(f"{cat} not in whitelist. Scraping Skipped \n")
+        continue
+      
+      print(f"** {category.text} **")
+
+      #process winner
       print(f"WINNER {winner.text}")
       winData = winner.text
       
@@ -105,17 +119,22 @@ def textProcess(year, cat, winData, nomData):
   # set up varaibles 
   tempDict = defaultdict(list)
   pronouns = "U" # to be handled by hand at a later time
-    
+
   # hanlde winner
   win_bool = "TRUE"
   title, author = cleanEntry(winData)
-  tempDict[title].extend([author, pronouns, cat, year, win_bool])
+  tempDict[title] = [author, pronouns, cat, year, win_bool]
+  
 
   #hanlde nominees
   win_bool = "FALSE"
   for nominee in nomData:
+    #for years with no award skip the no award bullet point
+    if nominee == "No Award":
+      continue
     title, author = cleanEntry(nominee)
-    tempDict[title].extend([author, pronouns, cat, year, win_bool])
+    tempDict[title] = [author, pronouns, cat, year, win_bool]
+
   return tempDict 
 
 def cleanEntry(text):
@@ -132,20 +151,27 @@ def cleanEntry(text):
   author = ""
  
   try:
-    title = re.search('(.*), by (.*) \(', text).group(1)
-    author = re.search('(.*), by (.*) \(', text).group(2)
+    title = re.search('(.*),? by (.*) \W', text).group(1)
+    author = re.search('(.*),? by (.*) \W', text).group(2)
   except:
     try:
       title = re.search('(.*), by (.*)', text).group(1)
       author = title = re.search('(.*), by (.*)', text).group(2)
-    except AttributeError:
-      # print(f"\nThe string is {text}\n Author: {author}\n Title: {title}\n")
-      #TODO FIX REGEX THIS
-      pass
+      print("I AM USEFUL")
+      time.sleep(10)
+    except:
+      try:
+        title = re.search('(.*),? (.*) \W', text).group(1)
+        author = re.search('(.*),? (.*) \W', text).group(2)
+      except AttributeError:
+        print(f"\nThe string is {text}\n Author: {author}\n Title: {title}\n")
+        time.sleep(10)
+        #TODO FIX REGEX THIS
+        pass
   
-  UNIQUE_AUTH.add(author.strip('"“”')) #global var 
+  UNIQUE_AUTH.add(author.strip('"“”″')) #global var 
   
-  return title.strip('"“"”'), author.strip('"“"”')
+  return title.strip('“”″"'), author.strip('"“”″')
 
 def exportToCSV(dictLst, fileName, flag = False):
   """
@@ -160,16 +186,14 @@ def exportToCSV(dictLst, fileName, flag = False):
   with open(fileName, 'a') as csvFP:
     dictWriter = csv.writer(csvFP, delimiter=',')
     
+    #write header if the file is new
     if flag == True:
       dictWriter.writerow(csvCol)
     
+    # walk through list of dicts and write the contents
     for d in dictLst:
-      print (list(d.values())[0][2])
-      if list(d.values())[0][2] not in WHITELST:
-        continue
-  
       for title, data in d.items():
-        data.insert(0, title)
+        data.insert(0, title) #make the key (title) to the first element in the row
         dictWriter.writerow(data)
   
   return None
