@@ -1,0 +1,1923 @@
+
+https://www.dataquest.io/blog/web-scraping-tutorial-python/
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/#a-list
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   2019 Hugo Awards | The Hugo Awards
+  </title>
+  <link href="http://gmpg.org/xfn/11" rel="profile"/>
+  <link href="http://www.thehugoawards.org/xmlrpc.php" rel="pingback"/>
+  <link href="//secure.gravatar.com" rel="dns-prefetch">
+   <link href="//fonts.googleapis.com" rel="dns-prefetch">
+    <link href="//s.w.org" rel="dns-prefetch"/>
+    <link href="//v0.wordpress.com" rel="dns-prefetch"/>
+    <link href="http://www.thehugoawards.org/feed/" rel="alternate" title="The Hugo Awards » Feed" type="application/rss+xml"/>
+    <link href="http://www.thehugoawards.org/comments/feed/" rel="alternate" title="The Hugo Awards » Comments Feed" type="application/rss+xml"/>
+    <script type="text/javascript">
+     window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.thehugoawards.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+     img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+    </style>
+    <link href="http://www.thehugoawards.org/wp-includes/css/dist/block-library/style.min.css?ver=5.6.2" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+    <style id="wp-block-library-inline-css" type="text/css">
+     .has-text-align-justify{text-align:justify;}
+    </style>
+    <link href="http://www.thehugoawards.org/wp-content/plugins/download-attachments/css/frontend.css?ver=5.6.2" id="download-attachments-frontend-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.thehugoawards.org/wp-content/themes/WSFS/style.css?ver=5.6.2" id="penscratch-style-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=latin%2Clatin-ext" id="penscratch-fonts-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.thehugoawards.org/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1" id="genericons-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.thehugoawards.org/wp-content/plugins/jetpack/css/jetpack.css?ver=9.4" id="jetpack_css-css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="http://www.thehugoawards.org/wp-json/" rel="https://api.w.org/"/>
+    <link href="http://www.thehugoawards.org/wp-json/wp/v2/pages/3621" rel="alternate" type="application/json"/>
+    <link href="http://www.thehugoawards.org/xmlrpc.php?rsd" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+    <link href="http://www.thehugoawards.org/wp-includes/wlwmanifest.xml" rel="wlwmanifest" type="application/wlwmanifest+xml"/>
+    <meta content="WordPress 5.6.2" name="generator">
+     <link href="http://www.thehugoawards.org/hugo-history/2019-hugo-awards/" rel="canonical"/>
+     <link href="https://wp.me/P2Yicr-Wp" rel="shortlink"/>
+     <link href="http://www.thehugoawards.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thehugoawards.org%2Fhugo-history%2F2019-hugo-awards%2F" rel="alternate" type="application/json+oembed"/>
+     <link href="http://www.thehugoawards.org/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thehugoawards.org%2Fhugo-history%2F2019-hugo-awards%2F&amp;format=xml" rel="alternate" type="text/xml+oembed"/>
+     <!-- Bad Behavior 2.2.24 run time: 3.922 ms -->
+     <style id="custom-background-css" type="text/css">
+      body.custom-background { background-color: #1d5692; }
+     </style>
+     <!-- Jetpack Open Graph Tags -->
+     <meta content="article" property="og:type">
+      <meta content="2019 Hugo Awards" property="og:title"/>
+      <meta content="http://www.thehugoawards.org/hugo-history/2019-hugo-awards/" property="og:url"/>
+      <meta content="Presented at: Dublin 2019: An Irish Worldcon, Dublin, Ireland, August 18, 2019 Hosts: Afua Richardson and Michael Scott Base design: Jim Fitzpatrick Awards Administration: Nicholas Whyte, Sanna Lop…" property="og:description"/>
+      <meta content="2019-07-28T21:34:46+00:00" property="article:published_time"/>
+      <meta content="2019-12-25T22:31:47+00:00" property="article:modified_time"/>
+      <meta content="The Hugo Awards" property="og:site_name"/>
+      <meta content="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm.jpg" property="og:image"/>
+      <meta content="512" property="og:image:width"/>
+      <meta content="512" property="og:image:height"/>
+      <meta content="en_US" property="og:locale"/>
+      <meta content="@TheHugoAwards" name="twitter:site"/>
+      <meta content="2019 Hugo Awards" name="twitter:text:title"/>
+      <meta content="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-270x270.jpg" name="twitter:image"/>
+      <meta content="summary" name="twitter:card"/>
+      <!-- End Jetpack Open Graph Tags -->
+      <link href="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-32x32.jpg" rel="icon" sizes="32x32"/>
+      <link href="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-192x192.jpg" rel="icon" sizes="192x192"/>
+      <link href="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-180x180.jpg" rel="apple-touch-icon"/>
+      <meta content="http://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-270x270.jpg" name="msapplication-TileImage"/>
+     </meta>
+    </meta>
+   </link>
+  </link>
+ </head>
+ <body class="page-template-default page page-id-3621 page-child parent-pageid-6 custom-background group-blog">
+  <div class="hfeed site" id="page">
+   <a class="skip-link screen-reader-text" href="#content">
+    Skip to content
+   </a>
+   <header class="site-header" id="masthead" role="banner">
+    <div class="site-branding">
+     <a class="site-logo-link" href="http://www.thehugoawards.org/" itemprop="url" rel="home">
+     </a>
+     <h1 class="site-title">
+      <a href="http://www.thehugoawards.org/" rel="home">
+       The Hugo Awards
+      </a>
+     </h1>
+     <h2 class="site-description">
+      The Official Site of The Hugo Awards
+     </h2>
+    </div>
+    <nav class="main-navigation" id="site-navigation" role="navigation">
+     <button class="menu-toggle">
+      Menu
+     </button>
+     <div class="menu-mainmenu-container">
+      <ul class="menu" id="menu-mainmenu">
+       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1560" id="menu-item-1560">
+        <a href="http://www.thehugoawards.org/">
+         Home
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1591" id="menu-item-1591">
+        <a href="http://www.thehugoawards.org/about-2/">
+         About
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1565" id="menu-item-1565">
+          <a href="http://www.thehugoawards.org/about/">
+           Introduction
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1561" id="menu-item-1561">
+          <a href="http://www.thehugoawards.org/campbell-history/">
+           <em>
+            Astounding
+           </em>
+           Award
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1563" id="menu-item-1563">
+          <a href="http://www.thehugoawards.org/credits-2/">
+           Credits
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1588" id="menu-item-1588">
+        <a href="http://www.thehugoawards.org/the-awards/">
+         The Awards
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1568" id="menu-item-1568">
+          <a href="http://www.thehugoawards.org/hugo-categories/">
+           Hugo Award Categories
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1569" id="menu-item-1569">
+          <a href="http://www.thehugoawards.org/the-voting-system/">
+           The Voting System
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1573" id="menu-item-1573">
+          <a href="http://www.thehugoawards.org/changing-the-rules/">
+           Changing the Rules
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1589" id="menu-item-1589">
+        <a href="http://www.thehugoawards.org/participate/">
+         Participate/Vote
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1566" id="menu-item-1566">
+          <a href="http://www.thehugoawards.org/i-want-to-vote/">
+           I Want to Vote
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1557" id="menu-item-1557">
+          <a href="http://www.thehugoawards.org/information-for-publishers/">
+           Information for Publishers
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1567" id="menu-item-1567">
+        <a href="http://www.thehugoawards.org/submitting-your-work/">
+         Submissions
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1590" id="menu-item-1590">
+        <a href="http://www.thehugoawards.org/history/">
+         Current/Past Hugos
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4182" id="menu-item-4182">
+          <a href="http://www.thehugoawards.org/hugo-history/2021-hugo-awards/">
+           2021 Hugo Awards
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-1571" id="menu-item-1571">
+          <a href="http://www.thehugoawards.org/hugo-history/">
+           Hugo Awards by Year
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2825" id="menu-item-2825">
+          <a href="http://www.thehugoawards.org/history/trophy-gallery/">
+           Trophy Gallery
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1572" id="menu-item-1572">
+          <a href="http://www.thehugoawards.org/hugo-trophies/">
+           Hugo Award Trophies
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1559" id="menu-item-1559">
+          <a href="http://www.thehugoawards.org/hugo-history/a-short-history-of-the-hugo-awards-process/">
+           A Short History of the Hugo Awards Process
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1586" id="menu-item-1586">
+        <a href="http://www.thehugoawards.org/questions/">
+         Questions?
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1570" id="menu-item-1570">
+          <a href="http://www.thehugoawards.org/hugo-faq/">
+           Hugo Award FAQ
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1556" id="menu-item-1556">
+          <a href="http://www.thehugoawards.org/ask-a-question/">
+           Ask a Question
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1562" id="menu-item-1562">
+          <a href="http://www.thehugoawards.org/contact-us/">
+           Contact Us
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1587" id="menu-item-1587">
+        <a href="http://www.thehugoawards.org/media/">
+         Media
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1558" id="menu-item-1558">
+          <a href="http://www.thehugoawards.org/media/logo-downloads/">
+           Logo Downloads
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3235" id="menu-item-3235">
+          <a href="http://www.thehugoawards.org/media/hugo-award-usage-guide/">
+           Hugo Award Usage Guide
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </nav>
+    <!-- #site-navigation -->
+   </header>
+   <!-- #masthead -->
+   <div class="site-content" id="content">
+    <a href="http://www.thehugoawards.org/" rel="home">
+     <img alt="" class="custom-header" height="300" src="http://www.thehugoawards.org/wp-content/uploads/2020/12/HugoHeader.jpg" width="937"/>
+    </a>
+    <div class="content-area" id="primary">
+     <main class="site-main" id="main" role="main">
+      <article class="post-3621 page type-page status-publish hentry" id="post-3621">
+       <header class="entry-header">
+        <h1 class="entry-title">
+         2019 Hugo Awards
+        </h1>
+       </header>
+       <!-- .entry-header -->
+       <div class="entry-content">
+        <p>
+         <a href="http://www.thehugoawards.org/hugo-trophies/2019-hugo-award-trophy/">
+          <img align="left" alt="2019 Hugo Award Trophy" class="trophy" height="260" src="http://www.thehugoawards.org/wp-content/uploads/2019/12/2019-Hugo-Award-Trophy-Image-e1575711309648.jpg"/>
+         </a>
+         <strong>
+          Presented at:
+         </strong>
+         <a href="https://dublin2019.com/">
+          Dublin 2019: An Irish Worldcon
+         </a>
+         , Dublin, Ireland, August 18, 2019
+        </p>
+        <p>
+         <strong>
+          Hosts:
+         </strong>
+         Afua Richardson and Michael Scott
+        </p>
+        <p>
+         <strong>
+          Base design:
+         </strong>
+         Jim Fitzpatrick
+        </p>
+        <p>
+         <strong>
+          Awards Administration:
+         </strong>
+         Nicholas Whyte, Sanna Lopperi-Vihinen
+        </p>
+        <p>
+         <br clear="all"/>
+        </p>
+        <p>
+         The 2019 Hugo Awards were presented on the evening of Sunday, August 18, 2019 at a ceremony at Dublin 2019, An Irish Worldcon, the 77th World Science Fiction Convention in Dublin, Ireland.
+        </p>
+        <p>
+         The finalists for the 2019 Hugo Awards, the Lodestar Award for Best Young Adult Book, and the John W. Campbell Award for Best New Writer were announced at Dublin 2019: An Irish Worldcon on April 2, 2019.
+        </p>
+        <p>
+         Doblin 2019 received 3,097 votes on the final ballot (3,089 online and 8 paper) from the members of Dublin 2019.
+        </p>
+        <p>
+         Dublin 2019 received and counted 1,800 valid nominating ballots (1,797 electronic and 3 paper) from the members of Worldcon 76 and Dublin 2019. Because of a change to WSFS rules ratified in 2018 that took effect in 2019, only members of the current and previous Worldcons (not including members of the following year’s Worldcon) were eligible to nominate for the 2019 Hugo Awards. Members nominated up to five works/people in each category, and the top six works/people in each category were shortlisted as finalists.
+        </p>
+        <p>
+         <a href="http://www.thehugoawards.org/wp-content/uploads/2019/08/2019-Hugo-Statistics.pdf">
+          Full Nominating and Final Ballot Voting Details
+         </a>
+         (PDF)
+        </p>
+        <p>
+         <a href="https://youtu.be/Hi9Dg6iyr2U" rel="noopener noreferrer" target="_blank">
+          Video of the announcement of the 2019 Hugo Award and 1944 Retrospective Hugo Award Finalists
+         </a>
+        </p>
+        <p>
+         <strong>
+          Best Novel
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           The Calculating Stars
+          </em>
+          , by Mary Robinette Kowal (Tor)
+         </li>
+         <li>
+          <em>
+           Spinning Silver
+          </em>
+          , by Naomi Novik (Del Rey / Macmillan)
+         </li>
+         <li>
+          <em>
+           Record of a Spaceborn Few
+          </em>
+          , by Becky Chambers (Hodder &amp; Stoughton / Harper Voyager)
+         </li>
+         <li>
+          <em>
+           Trail of Lightning
+          </em>
+          , by Rebecca Roanhorse (Saga)
+         </li>
+         <li>
+          <em>
+           Revenant Gun
+          </em>
+          , by Yoon Ha Lee (Solaris)
+         </li>
+         <li>
+          <em>
+           Space Opera
+          </em>
+          , by Catherynne M. Valente (Saga/Corsair)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Novella
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Artificial Condition
+          </em>
+          , by Martha Wells (Tor.com publishing)
+         </li>
+         <li>
+          <em>
+           The Tea Master and the Detective
+          </em>
+          , by Aliette de Bodard (Subterranean Press / JABberwocky Literary Agency)
+         </li>
+         <li>
+          <em>
+           Beneath the Sugar Sky
+          </em>
+          , by Seanan McGuire (Tor.com publishing)
+         </li>
+         <li>
+          <em>
+           The Black God’s Drums
+          </em>
+          , by P. Djèlí Clark (Tor.com publishing)
+         </li>
+         <li>
+          <em>
+           Binti: The Night Masquerade
+          </em>
+          , by Nnedi Okorafor (Tor.com publishing)
+         </li>
+         <li>
+          <em>
+           Gods, Monsters, and the Lucky Peach
+          </em>
+          , by Kelly Robson (Tor.com publishing)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Novelette
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          “If at First You Don’t Succeed, Try, Try Again,” by Zen Cho (B&amp;N Sci-Fi and Fantasy Blog, 29 November 2018)
+         </li>
+         <li>
+          “The Last Banquet of Temporal Confections,” by Tina Connolly (Tor.com, 11 July 2018)
+         </li>
+         <li>
+          “The Thing About Ghost Stories,” by Naomi Kritzer (
+          <em>
+           Uncanny Magazine
+          </em>
+          25, November-December 2018)
+         </li>
+         <li>
+          “Nine Last Days on Planet Earth,” by Daryl Gregory (Tor.com, 19 September 2018)
+         </li>
+         <li>
+          <em>
+           The Only Harmless Great Thing
+          </em>
+          , by Brooke Bolander (Tor.com publishing)
+         </li>
+         <li>
+          “When We Were Starless,” by Simone Heller (
+          <em>
+           Clarkesworld
+          </em>
+          145, October 2018)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Short Story
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          “A Witch’s Guide to Escape: A Practical Compendium of Portal Fantasies,” by Alix E. Harrow (
+          <em>
+           Apex Magazine
+          </em>
+          , February 2018)
+         </li>
+         <li>
+          “The Secret Lives of the Nine Negro Teeth of George Washington,” by P. Djèlí Clark (
+          <em>
+           Fireside Magazine
+          </em>
+          , February 2018)
+         </li>
+         <li>
+          “The Rose MacGregor Drinking and Admiration Society,” by T. Kingfisher (
+          <em>
+           Uncanny Magazine
+          </em>
+          25, November-December 2018)
+         </li>
+         <li>
+          “STET,” by Sarah Gailey (
+          <em>
+           Fireside Magazine
+          </em>
+          , October 2018)
+         </li>
+         <li>
+          “The Court Magician,” by Sarah Pinsker (
+          <em>
+           Lightspeed
+          </em>
+          , January 2018)
+         </li>
+         <li>
+          “The Tale of the Three Beautiful Raptor Sisters, and the Prince Who Was Made of Meat,” by Brooke Bolander (
+          <em>
+           Uncanny Magazine
+          </em>
+          23, July-August 2018)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Series
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Wayfarers
+          </em>
+          , by Becky Chambers (Hodder &amp; Stoughton / Harper Voyager)
+         </li>
+         <li>
+          <em>
+           The Laundry Files
+          </em>
+          , by Charles Stross (most recently Orbit/Tor and Tor.com publishing)
+         </li>
+         <li>
+          <em>
+           Machineries of Empire
+          </em>
+          , by Yoon Ha Lee (Solaris)
+         </li>
+         <li>
+          The
+          <em>
+           October Daye
+          </em>
+          Series, by Seanan McGuire (most recently DAW)
+         </li>
+         <li>
+          <em>
+           The Universe of Xuya
+          </em>
+          , by Aliette de Bodard (most recently Subterranean Press)
+         </li>
+         <li>
+          <em>
+           The Centenal Cycle
+          </em>
+          , by Malka Older (Tor.com publishing)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Related Work
+         </strong>
+        </p>
+        <ul>
+         <li>
+          <span class="winner">
+           <em>
+            Archive of Our Own
+           </em>
+           , a project of the Organization for Transformative Works
+          </span>
+          <sup>
+           <strong>
+            <em>
+             <a href="http://www.thehugoawards.org/2019/12/2019-hugo-awards-clarification/" rel="noopener noreferrer" target="_blank">
+              [see clarification]
+             </a>
+            </em>
+           </strong>
+          </sup>
+         </li>
+         <li>
+          <em>
+           Ursula K. Le Guin: Conversations on Writing
+          </em>
+          , by Ursula K. Le Guin with David Naimon (Tin House Books)
+         </li>
+         <li>
+          <em>
+           An Informal History of the Hugos: A Personal Look Back at the Hugo Awards, 1953-2000
+          </em>
+          , by Jo Walton (Tor)
+         </li>
+         <li>
+          <em>
+           www.mexicanxinitiative.com: The Mexicanx Initiative Experience at Worldcon 76
+          </em>
+          (Julia Rios, Libia Brenda, Pablo Defendini, John Picacio)
+         </li>
+         <li>
+          <em>
+           The Hobbit Duology
+          </em>
+          (documentary in three parts), written and edited by Lindsay Ellis and Angelina Meehan (YouTube)
+         </li>
+         <li>
+          <em>
+           Astounding: John W. Campbell, Isaac Asimov, Robert A. Heinlein, L. Ron Hubbard, and the Golden Age of Science Fiction
+          </em>
+          , by Alec Nevala-Lee (Dey Street Books)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Graphic Story
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Monstress
+          </em>
+          , Volume 3:
+          <em>
+           Haven
+          </em>
+          , written by Marjorie Liu, art by Sana Takeda (Image Comics)
+         </li>
+         <li>
+          <em>
+           Black Panther: Long Live the King
+          </em>
+          , written by Nnedi Okorafor and Aaron Covington, art by André Lima Araújo, Mario Del Pennino and Tana Ford (Marvel)
+         </li>
+         <li>
+          <em>
+           Abbott
+          </em>
+          , written by Saladin Ahmed, art by Sami Kivelä, colours by Jason Wordie, letters by Jim Campbell (BOOM! Studios)
+         </li>
+         <li>
+          <em>
+           Saga
+          </em>
+          , Volume 9, written by Brian K. Vaughan, art by Fiona Staples (Image Comics)
+         </li>
+         <li>
+          <em>
+           Paper Girls
+          </em>
+          , Volume 4, written by Brian K. Vaughan, art by Cliff Chiang, colours by Matt Wilson, letters by Jared K. Fletcher (Image Comics)
+         </li>
+         <li>
+          <em>
+           On a Sunbeam
+          </em>
+          , by Tillie Walden (First Second)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Dramatic Presentation, Long Form
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Spider-Man: Into the Spider-Verse
+          </em>
+          , screenplay by Phil Lord and Rodney Rothman, directed by Bob Persichetti, Peter Ramsey and Rodney Rothman (Sony)
+         </li>
+         <li>
+          <em>
+           Black Panther
+          </em>
+          , written by Ryan Coogler and Joe Robert Cole, directed by Ryan Coogler (Marvel Studios)
+         </li>
+         <li>
+          <em>
+           Avengers: Infinity War
+          </em>
+          , screenplay by Christopher Markus and Stephen McFeely, directed by Anthony Russo and Joe Russo (Marvel Studios)
+         </li>
+         <li>
+          <em>
+           Annihilation
+          </em>
+          , directed and written for the screen by Alex Garland, based on the novel by Jeff VanderMeer (Paramount Pictures / Skydance)
+         </li>
+         <li>
+          <em>
+           A Quiet Place
+          </em>
+          , screenplay by Scott Beck, John Krasinski and Bryan Woods, directed by John Krasinski (Platinum Dunes / Sunday Night)
+         </li>
+         <li>
+          <em>
+           Sorry to Bother You
+          </em>
+          , written and directed by Boots Riley (Annapurna Pictures)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Dramatic Presentation, Short Form
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           The Good Place
+          </em>
+          : “Janet(s),” written by Josh Siegal &amp; Dylan Morgan, directed by Morgan Sackett (NBC)
+         </li>
+         <li>
+          <em>
+           The Expanse
+          </em>
+          : “Abaddon’s Gate,” written by Daniel Abraham, Ty Franck and Naren Shankar, directed by Simon Cellan Jones (Penguin in a Parka / Alcon Entertainment)
+         </li>
+         <li>
+          <em>
+           Doctor Who
+          </em>
+          : “Demons of the Punjab,” written by Vinay Patel, directed by Jamie Childs (BBC)
+         </li>
+         <li>
+          <em>
+           Doctor Who
+          </em>
+          : “Rosa,” written by Malorie Blackman and Chris Chibnall, directed by Mark Tonderai (BBC)
+         </li>
+         <li>
+          <em>
+           The Good Place
+          </em>
+          : “Jeremy Bearimy,” written by Megan Amram, directed by Trent O’Donnell (NBC)
+         </li>
+         <li>
+          <em>
+           Dirty Computer
+          </em>
+          , written by Janelle Monáe and Chuck Lightning, directed by Andrew Donoho and Chuck Lightning (Wondaland Arts Society / Bad Boy Records / Atlantic Records)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Editor, Short Form
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Gardner Dozois
+         </li>
+         <li>
+          Neil Clarke
+         </li>
+         <li>
+          Lynne M. Thomas and Michael Damian Thomas
+         </li>
+         <li>
+          Julia Rios
+         </li>
+         <li>
+          Lee Harris
+         </li>
+         <li>
+          E. Catherine Tobler
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Editor, Long Form
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Navah Wolfe
+         </li>
+         <li>
+          Sheila E. Gilbert
+         </li>
+         <li>
+          Beth Meacham
+         </li>
+         <li>
+          Diana Pho
+         </li>
+         <li>
+          Gillian Redfearn
+         </li>
+         <li>
+          Anne Lesley Groell
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Professional Artist
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Charles Vess
+         </li>
+         <li>
+          Galen Dara
+         </li>
+         <li>
+          Yuko Shimizu
+         </li>
+         <li>
+          Victo Ngai
+         </li>
+         <li>
+          John Picacio
+         </li>
+         <li>
+          Jaime Jones
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Semiprozine
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Uncanny Magazine
+          </em>
+          , publishers/editors-in-chief Lynne M. Thomas and Michael Damian Thomas, managing editor Michi Trota, podcast producers Erika Ensign and Steven Schapansky,
+          <em>
+           Disabled People Destroy Science Fiction
+          </em>
+          Special Issue editors-in-chief Elsa Sjunneson-Henry and Dominik Parisien
+         </li>
+         <li>
+          <em>
+           Strange Horizons
+          </em>
+          , edited by Jane Crowley, Kate Dollarhyde, Vanessa Rose Phin, Vajra Chandrasekera, Romie Stott, Maureen Kincaid Speller, and the
+          <em>
+           Strange Horizons
+          </em>
+          Staff
+         </li>
+         <li>
+          <em>
+           Fireside Magazine
+          </em>
+          , edited by Julia Rios, managing editor Elsa Sjunneson-Henry, copyeditor Chelle Parker, social coordinator Meg Frank, special features editor Tanya DePass, founding editor Brian White, publisher and art director Pablo Defendini
+         </li>
+         <li>
+          <em>
+           Beneath Ceaseless Skies
+          </em>
+          , editor-in-chief and publisher Scott H. Andrews
+         </li>
+         <li>
+          <em>
+           FIYAH
+          </em>
+          Magazine of Black Speculative Fiction, executive editors Troy L. Wiggins and DaVaun Sanders, editors L.D. Lewis, Brandon O’Brien, Kaleb Russell, Danny Lore, and Brent Lambert
+         </li>
+         <li>
+          <em>
+           Shimmer
+          </em>
+          , publisher Beth Wodzinski, senior editor E. Catherine Tobler
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Fanzine
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Lady Business
+          </em>
+          , editors Ira, Jodie, KJ, Renay &amp; Susan
+         </li>
+         <li>
+          <em>
+           nerds of a feather, flock together
+          </em>
+          , editors Joe Sherry, Vance Kotrla and The G
+         </li>
+         <li>
+          <em>
+           Journey Planet
+          </em>
+          , edited by Team Journey Planet
+         </li>
+         <li>
+          <em>
+           Galactic Journey
+          </em>
+          , founder Gideon Marcus, editor Janice Marcus
+         </li>
+         <li>
+          <em>
+           Quick Sip Reviews
+          </em>
+          , editor Charles Payseur
+         </li>
+         <li>
+          <em>
+           Rocket Stack Rank
+          </em>
+          , editors Greg Hullender and Eric Wong
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Fancast
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Our Opinions Are Correct
+          </em>
+          , hosted by Annalee Newitz and Charlie Jane Anders
+         </li>
+         <li>
+          <em>
+           Fangirl Happy Hour
+          </em>
+          , hosted by Ana Grilo and Renay Williams
+         </li>
+         <li>
+          <em>
+           Be the Serpent
+          </em>
+          , presented by Alexandra Rowland, Freya Marske and Jennifer Mace
+         </li>
+         <li>
+          <em>
+           Galactic Suburbia
+          </em>
+          , hosted by Alisa Krasnostein, Alexandra Pierce, and Tansy Rayner Roberts, produced by Andrew Finch
+         </li>
+         <li>
+          <em>
+           The Skiffy and Fanty Show
+          </em>
+          , produced by Jen Zink and Shaun Duke, hosted by Jen Zink, Shaun Duke, Paul Weimer, Alex Acks, Elizabeth Fitzgerald, Trish Matson, and team
+         </li>
+         <li>
+          <em>
+           The Coode Street Podcast
+          </em>
+          , presented by Jonathan Strahan and Gary K. Wolfe
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Fan Writer
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Foz Meadows
+         </li>
+         <li>
+          Bogi Takács
+         </li>
+         <li>
+          Elsa Sjunneson-Henry
+         </li>
+         <li>
+          James Davis Nicoll
+         </li>
+         <li>
+          Alasdair Stuart
+         </li>
+         <li>
+          Charles Payseur
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Fan Artist
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Likhain (Mia Sereno)
+         </li>
+         <li>
+          Grace P. Fong
+         </li>
+         <li>
+          Sara Felix
+         </li>
+         <li>
+          Meg Frank
+         </li>
+         <li>
+          Spring Schoenhuth
+         </li>
+         <li>
+          Ariela Housman
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Best Art Book
+         </strong>
+         <br/>
+         Under the WSFS Constitution every Worldcon has the right to add one category to the Hugo Awards for that year only. Dublin 2019 has chosen to use this right to create an award for an art book.
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           The Books of Earthsea: The Complete Illustrated Edition
+          </em>
+          , illustrated by Charles Vess, written by Ursula K. Le Guin (Saga Press /Gollancz)
+         </li>
+         <li>
+          <em>
+           Spider-Man: Into the Spider-Verse – The Art of the Movie
+          </em>
+          , by Ramin Zahed (Titan Books)
+         </li>
+         <li>
+          <em>
+           Dungeons &amp; Dragons Art &amp; Arcana: A Visual History
+          </em>
+          , by Michael Witwer, Kyle Newman, Jon Peterson, Sam Witwer (Ten Speed Press)
+         </li>
+         <li>
+          <em>
+           Tolkien: Maker of Middle-earth
+          </em>
+          , ed. Catherine McIlwaine (Bodleian Library)
+         </li>
+         <li>
+          <em>
+           Daydreamer’s Journey: The Art of Julie Dillon
+          </em>
+          , by Julie Dillon (self-published)
+         </li>
+         <li>
+          <em>
+           Spectrum 25: The Best in Contemporary Fantastic Art
+          </em>
+          , ed. John Fleskes (Flesk Publications)
+         </li>
+        </ul>
+        <p>
+         There are two other Awards administered by Worldcon 76 that are not Hugo Awards:
+        </p>
+        <p>
+         <strong>
+          Lodestar Award for Best Young Adult Book
+         </strong>
+         <br/>
+         <strong>
+          Trophy Design:
+         </strong>
+         Sara Felix
+        </p>
+        <ul>
+         <li class="winner">
+          <em>
+           Children of Blood and Bone
+          </em>
+          , by Tomi Adeyemi (Henry Holt / Macmillan Children’s Books)
+         </li>
+         <li>
+          <em>
+           Dread Nation
+          </em>
+          , by Justina Ireland (Balzer + Bray)
+         </li>
+         <li>
+          <em>
+           Tess of the Road
+          </em>
+          , by Rachel Hartman (Random House / Penguin Teen)
+         </li>
+         <li>
+          <em>
+           The Cruel Prince
+          </em>
+          , by Holly Black (Little, Brown / Hot Key Books)
+         </li>
+         <li>
+          <em>
+           The Invasion
+          </em>
+          , by Peadar O’Guilin (David Fickling Books / Scholastic)
+         </li>
+         <li>
+          <em>
+           The Belles
+          </em>
+          , by Dhonielle Clayton (Freeform / Gollancz)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          John W. Campbell Award for Best New Writer
+         </strong>
+        </p>
+        <ul>
+         <li class="winner">
+          Jeannette Ng*
+         </li>
+         <li>
+          Rivers Solomon*
+         </li>
+         <li>
+          S.A. Chakraborty*
+         </li>
+         <li>
+          Katherine Arden*
+         </li>
+         <li>
+          R.F. Kuang
+         </li>
+         <li>
+          Vina Jie-Min Prasad*
+         </li>
+        </ul>
+        <p>
+         <small>
+          <sup>
+           *
+          </sup>
+          Finalist in their 2nd year of eligibility
+         </small>
+        </p>
+        <p>
+         The 2019 Hugo Awards are generally for work first published or appearing in 2018, or first published in the USA in 2018 (if previously published elsewhere), or first published in English in 2018 (if previously published in another language). The detailed rules are in
+         <a href="http://www.wsfs.org/rules-of-the-world-science-fiction-society">
+          Article 3 of the WSFS Constitution.
+         </a>
+        </p>
+       </div>
+       <!-- .entry-content -->
+       <footer class="entry-footer">
+       </footer>
+       <!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+     </main>
+     <!-- #main -->
+    </div>
+    <!-- #primary -->
+    <div class="widget-area" id="secondary" role="complementary">
+     <aside class="widget widget_search" id="search-3">
+      <h1 class="widget-title">
+       Search
+      </h1>
+      <form action="http://www.thehugoawards.org/" class="search-form" method="get" role="search">
+       <label>
+        <span class="screen-reader-text">
+         Search for:
+        </span>
+        <input class="search-field" name="s" placeholder="Search …" type="search" value=""/>
+       </label>
+       <input class="search-submit" type="submit" value="Search"/>
+      </form>
+     </aside>
+     <aside class="widget widget_text" id="text-3">
+      <h1 class="widget-title">
+       Follow Us
+      </h1>
+      <div class="textwidget">
+       <ul>
+        <li>
+         <a href="http://www.thehugoawards.org/feed/">
+          RSS Feed
+         </a>
+        </li>
+        <li>
+         <a href="http://twitter.com/thehugoawards">
+          Twitter
+         </a>
+        </li>
+        <li>
+         <a href="http://www.facebook.com/pages/The-Hugo-Awards/206080968187">
+          Facebook
+         </a>
+        </li>
+       </ul>
+      </div>
+     </aside>
+     <aside class="widget widget_categories" id="categories-2">
+      <h1 class="widget-title">
+       Select Posts
+      </h1>
+      <form action="http://www.thehugoawards.org" method="get">
+       <label class="screen-reader-text" for="cat">
+        Select Posts
+       </label>
+       <select class="postform" id="cat" name="cat">
+        <option value="-1">
+         Select Category
+        </option>
+        <option class="level-0" value="1">
+         Announcements
+        </option>
+        <option class="level-0" value="28">
+         Astounding Award
+        </option>
+        <option class="level-0" value="16">
+         Award Ceremonies
+        </option>
+        <option class="level-0" value="17">
+         Data
+        </option>
+        <option class="level-0" value="26">
+         Finalists
+        </option>
+        <option class="level-0" value="12">
+         Free fiction
+        </option>
+        <option class="level-0" value="13">
+         In the News
+        </option>
+        <option class="level-0" value="27">
+         Lodestar Award
+        </option>
+        <option class="level-0" value="9">
+         Logo Competition
+        </option>
+        <option class="level-0" value="15">
+         Publications
+        </option>
+        <option class="level-0" value="7">
+         Results
+        </option>
+        <option class="level-0" value="25">
+         Retrospective Hugo Awards
+        </option>
+        <option class="level-0" value="8">
+         Rule Changes
+        </option>
+        <option class="level-0" value="24">
+         Special Categories
+        </option>
+        <option class="level-0" value="11">
+         Trophies
+        </option>
+        <option class="level-0" value="21">
+         Voter Packet
+        </option>
+        <option class="level-0" value="6">
+         Voting Deadlines
+        </option>
+        <option class="level-0" value="10">
+         Worldcon
+        </option>
+       </select>
+      </form>
+      <script type="text/javascript">
+       /* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			dropdown.parentNode.submit();
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+      </script>
+     </aside>
+     <aside class="widget widget_links" id="linkcat-3">
+      <h1 class="widget-title">
+       Upcoming Worldcons
+      </h1>
+      <ul class="xoxo blogroll">
+       <li>
+        <a href="https://discon3.org/" title="Washington, DC, USA, August 25-29, 2021">
+         2021: DisCon III
+        </a>
+       </li>
+       <li>
+        <a href="https://chicon.org/" title="Chicago, Illinois, USA, September 1-5, 2022">
+         2022: Chicon 8
+        </a>
+       </li>
+      </ul>
+     </aside>
+     <aside class="widget widget_links" id="linkcat-4">
+      <h1 class="widget-title">
+       Other WSFS Sites
+      </h1>
+      <ul class="xoxo blogroll">
+       <li>
+        <a href="http://www.worldcon.org/">
+         Worldcon
+        </a>
+       </li>
+       <li>
+        <a href="http://www.wsfs.org/rules-of-the-world-science-fiction-society/" target="_blank" title="Most recently published versions of the World Science Fiction Society’s rules, including the rules for the Hugo Award.">
+         WSFS Rules (Constitution &amp; Standing Rules)
+        </a>
+       </li>
+      </ul>
+     </aside>
+     <aside class="widget widget_links" id="linkcat-5">
+      <h1 class="widget-title">
+       Third Party Recommendation Sites
+      </h1>
+      <ul class="xoxo blogroll">
+       <li>
+        <a href="http://hugoeligibleart.tumblr.com/" target="_blank" title="A list that attempts to collect information about artists who have done work making them eligible for the Hugo Awards">
+         Hugo Award Eligible Artists
+        </a>
+       </li>
+       <li>
+        <a href="https://ladybusiness.dreamwidth.org/2016/02/11/hugo-award-recommendations.html" target="_blank" title="Award recommendation page from Lady Business">
+         Lady Business
+        </a>
+       </li>
+       <li>
+        <a href="https://www.nesfa.org/awards/yearly-hugo-lists/" target="_blank">
+         NESFA
+        </a>
+       </li>
+       <li>
+        <a href="https://hugorecommend.wordpress.com/" target="_blank">
+         Recommendations Season
+        </a>
+       </li>
+       <li>
+        <a href="http://www.rocketstackrank.com/" target="_blank" title="This site aims to help casual SF fans efficiently identify, obtain, and discuss great original short fiction to nominate for the annual Hugo Awards">
+         Rocket Stack Rank
+        </a>
+       </li>
+       <li>
+        <a href="http://www.concatenation.org/stuff/best-science-fiction-of-the-year.html" target="_blank" title="Best works recommendations (mostly books and movies) from SF2 Concatenation">
+         Science Fact &amp; Science Fiction Concatenation
+        </a>
+       </li>
+       <li>
+        <a href="http://semiprozine.org/semiprozine-directory/" target="_blank" title="List of semi-professional publications potentially eligible for Semiprozine Hugo Award and clarifications of other non-eligible publications.">
+         Semiprozine Directory
+        </a>
+       </li>
+      </ul>
+     </aside>
+     <aside class="widget widget_text" id="text-4">
+      <div class="textwidget">
+       <p>
+        Note: links to third party sites are provided because they encourage participation in the Hugo Awards. WSFS does not endorse the recommendations that they make, nor any other content of those sites.
+       </p>
+      </div>
+     </aside>
+     <aside class="widget widget_archive" id="archives-3">
+      <h1 class="widget-title">
+       Archives
+      </h1>
+      <label class="screen-reader-text" for="archives-dropdown-3">
+       Archives
+      </label>
+      <select id="archives-dropdown-3" name="archive-dropdown">
+       <option value="">
+        Select Month
+       </option>
+       <option value="http://www.thehugoawards.org/2021/01/">
+        January 2021
+       </option>
+       <option value="http://www.thehugoawards.org/2020/12/">
+        December 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/11/">
+        November 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/08/">
+        August 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/07/">
+        July 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/05/">
+        May 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/04/">
+        April 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/03/">
+        March 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2020/01/">
+        January 2020
+       </option>
+       <option value="http://www.thehugoawards.org/2019/12/">
+        December 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/09/">
+        September 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/08/">
+        August 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/07/">
+        July 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/06/">
+        June 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/05/">
+        May 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/04/">
+        April 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/03/">
+        March 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2019/01/">
+        January 2019
+       </option>
+       <option value="http://www.thehugoawards.org/2018/11/">
+        November 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/08/">
+        August 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/07/">
+        July 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/05/">
+        May 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/03/">
+        March 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/02/">
+        February 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2018/01/">
+        January 2018
+       </option>
+       <option value="http://www.thehugoawards.org/2017/12/">
+        December 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/11/">
+        November 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/10/">
+        October 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/09/">
+        September 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/08/">
+        August 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/07/">
+        July 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/05/">
+        May 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/04/">
+        April 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/03/">
+        March 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/02/">
+        February 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2017/01/">
+        January 2017
+       </option>
+       <option value="http://www.thehugoawards.org/2016/09/">
+        September 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/08/">
+        August 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/06/">
+        June 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/05/">
+        May 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/04/">
+        April 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/03/">
+        March 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/02/">
+        February 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2016/01/">
+        January 2016
+       </option>
+       <option value="http://www.thehugoawards.org/2015/11/">
+        November 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/09/">
+        September 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/08/">
+        August 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/07/">
+        July 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/05/">
+        May 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/04/">
+        April 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/03/">
+        March 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/02/">
+        February 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2015/01/">
+        January 2015
+       </option>
+       <option value="http://www.thehugoawards.org/2014/12/">
+        December 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/08/">
+        August 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/07/">
+        July 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/06/">
+        June 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/05/">
+        May 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/04/">
+        April 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2014/01/">
+        January 2014
+       </option>
+       <option value="http://www.thehugoawards.org/2013/09/">
+        September 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/08/">
+        August 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/07/">
+        July 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/06/">
+        June 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/05/">
+        May 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/03/">
+        March 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/02/">
+        February 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2013/01/">
+        January 2013
+       </option>
+       <option value="http://www.thehugoawards.org/2012/12/">
+        December 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/10/">
+        October 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/09/">
+        September 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/08/">
+        August 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/05/">
+        May 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/04/">
+        April 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/03/">
+        March 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2012/01/">
+        January 2012
+       </option>
+       <option value="http://www.thehugoawards.org/2011/12/">
+        December 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/08/">
+        August 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/07/">
+        July 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/05/">
+        May 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/04/">
+        April 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/03/">
+        March 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2011/01/">
+        January 2011
+       </option>
+       <option value="http://www.thehugoawards.org/2010/11/">
+        November 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/09/">
+        September 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/08/">
+        August 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/07/">
+        July 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/05/">
+        May 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/04/">
+        April 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/03/">
+        March 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2010/01/">
+        January 2010
+       </option>
+       <option value="http://www.thehugoawards.org/2009/12/">
+        December 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/11/">
+        November 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/09/">
+        September 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/08/">
+        August 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/07/">
+        July 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/06/">
+        June 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/05/">
+        May 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/04/">
+        April 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/03/">
+        March 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/02/">
+        February 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2009/01/">
+        January 2009
+       </option>
+       <option value="http://www.thehugoawards.org/2008/08/">
+        August 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2008/07/">
+        July 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2008/04/">
+        April 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2008/03/">
+        March 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2008/02/">
+        February 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2008/01/">
+        January 2008
+       </option>
+       <option value="http://www.thehugoawards.org/2007/10/">
+        October 2007
+       </option>
+       <option value="http://www.thehugoawards.org/2007/09/">
+        September 2007
+       </option>
+       <option value="http://www.thehugoawards.org/2007/08/">
+        August 2007
+       </option>
+      </select>
+      <script type="text/javascript">
+       /* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-3" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+      </script>
+     </aside>
+     <aside class="widget widget_calendar" id="calendar-3">
+      <h1 class="widget-title">
+       Calendar
+      </h1>
+      <div class="calendar_wrap" id="calendar_wrap">
+       <table class="wp-calendar-table" id="wp-calendar">
+        <caption>
+         March 2021
+        </caption>
+        <thead>
+         <tr>
+          <th scope="col" title="Sunday">
+           S
+          </th>
+          <th scope="col" title="Monday">
+           M
+          </th>
+          <th scope="col" title="Tuesday">
+           T
+          </th>
+          <th scope="col" title="Wednesday">
+           W
+          </th>
+          <th scope="col" title="Thursday">
+           T
+          </th>
+          <th scope="col" title="Friday">
+           F
+          </th>
+          <th scope="col" title="Saturday">
+           S
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td class="pad" colspan="1">
+          </td>
+          <td>
+           1
+          </td>
+          <td>
+           2
+          </td>
+          <td>
+           3
+          </td>
+          <td id="today">
+           4
+          </td>
+          <td>
+           5
+          </td>
+          <td>
+           6
+          </td>
+         </tr>
+         <tr>
+          <td>
+           7
+          </td>
+          <td>
+           8
+          </td>
+          <td>
+           9
+          </td>
+          <td>
+           10
+          </td>
+          <td>
+           11
+          </td>
+          <td>
+           12
+          </td>
+          <td>
+           13
+          </td>
+         </tr>
+         <tr>
+          <td>
+           14
+          </td>
+          <td>
+           15
+          </td>
+          <td>
+           16
+          </td>
+          <td>
+           17
+          </td>
+          <td>
+           18
+          </td>
+          <td>
+           19
+          </td>
+          <td>
+           20
+          </td>
+         </tr>
+         <tr>
+          <td>
+           21
+          </td>
+          <td>
+           22
+          </td>
+          <td>
+           23
+          </td>
+          <td>
+           24
+          </td>
+          <td>
+           25
+          </td>
+          <td>
+           26
+          </td>
+          <td>
+           27
+          </td>
+         </tr>
+         <tr>
+          <td>
+           28
+          </td>
+          <td>
+           29
+          </td>
+          <td>
+           30
+          </td>
+          <td>
+           31
+          </td>
+          <td class="pad" colspan="3">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+       <nav aria-label="Previous and next months" class="wp-calendar-nav">
+        <span class="wp-calendar-nav-prev">
+         <a href="http://www.thehugoawards.org/2021/01/">
+          « Jan
+         </a>
+        </span>
+        <span class="pad">
+        </span>
+        <span class="wp-calendar-nav-next">
+        </span>
+       </nav>
+      </div>
+     </aside>
+     <aside class="widget widget_eu_cookie_law_widget" id="eu_cookie_law_widget-2">
+      <div class="hide-on-button" data-consent-expiration="180" data-hide-timeout="30" id="eu-cookie-law">
+       <form method="post">
+        <input class="accept" type="submit" value="Close and accept"/>
+       </form>
+       Privacy &amp; Cookies: This site uses cookies. By continuing to use this website, you agree to their use.
+       <br/>
+       To find out more, including how to control cookies, see here:
+       <a href="https://automattic.com/cookies/" rel="nofollow">
+        Cookie Policy
+       </a>
+      </div>
+     </aside>
+    </div>
+    <!-- #secondary -->
+   </div>
+   <!-- #content -->
+   <footer class="site-footer" id="colophon" role="contentinfo">
+    <p>
+     "World Science Fiction Society", "WSFS", "World Science Fiction Convention", "Worldcon", "NASFiC", "Hugo Award", the Hugo Award Logo, and the distinctive design of the Hugo Award Rocket are service marks of the World Science Fiction Society, an unincorporated literary society. You can contact the WSFS Mark Protection Committee at
+     <a href="mailto:mpc@wsfs.org">
+      mpc@wsfs.org
+     </a>
+     .
+    </p>
+    <hr/>
+    <div class="site-info">
+     <a href="http://wordpress.org/">
+      Proudly powered by WordPress
+     </a>
+     <span class="sep">
+      ~
+     </span>
+     Theme: Penscratch by
+     <a href="http://wordpress.com/themes/penscratch/" rel="designer">
+      WordPress.com
+     </a>
+     .
+    </div>
+    <!-- .site-info -->
+   </footer>
+   <!-- #colophon -->
+  </div>
+  <!-- #page -->
+  <script id="penscratch-navigation-js" src="http://www.thehugoawards.org/wp-content/themes/penscratch/js/navigation.js?ver=20120206" type="text/javascript">
+  </script>
+  <script id="penscratch-skip-link-focus-fix-js" src="http://www.thehugoawards.org/wp-content/themes/penscratch/js/skip-link-focus-fix.js?ver=20130115" type="text/javascript">
+  </script>
+  <script id="eu-cookie-law-script-js" src="http://www.thehugoawards.org/wp-content/plugins/jetpack/_inc/build/widgets/eu-cookie-law/eu-cookie-law.min.js?ver=20180522" type="text/javascript">
+  </script>
+  <script id="wp-embed-js" src="http://www.thehugoawards.org/wp-includes/js/wp-embed.min.js?ver=5.6.2" type="text/javascript">
+  </script>
+  <script defer="" src="https://stats.wp.com/e-202109.js">
+  </script>
+  <script>
+   _stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:9.4',blog:'43922315',post:'3621',tz:'0',srv:'www.thehugoawards.org'} ]);
+	_stq.push([ 'clickTrackerInit', '43922315', '3621' ]);
+  </script>
+ </body>
+</html>
